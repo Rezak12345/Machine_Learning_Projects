@@ -1,0 +1,13 @@
+train:
+  _target_: dataset.city.CityscapeDataset
+  image_dir: '..\ML_Projects\Semantique_Segmentation_With_UNet\Pytorch_Lightning_Version\DATA\cityscapes_data\cityscapes_data\train'
+  label_dir: '..\ML_Projects\Semantique_Segmentation_With_UNet\Pytorch_Lightning_Version\DATA\cityscapes_data\cityscapes_data\labels'
+  image_size: [256, 256]
+
+val: 
+  _target_: dataset.city.CityscapeDataset
+  image_dir: '..\ML_Projects\Semantique_Segmentation_With_UNet\Pytorch_Lightning_Version\DATA\cityscapes_data\cityscapes_data\label'
+  label_dir: 'val'
+  image_size: [256, 256]
+
+

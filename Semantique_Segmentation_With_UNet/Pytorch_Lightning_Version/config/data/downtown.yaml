@@ -1,0 +1,3 @@
+intel_datamodule:
+  _target_: Modules.Data_Module.CityDataModule
+  train_workers: 0

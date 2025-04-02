@@ -1,0 +1,8 @@
+defaults:
+  - _self_
+  - data: Intel.yaml
+  - dataset: processing.yaml
+  - module: Lightning_Model.yaml
+  - saves: saving.yaml
+  - train: trainer.yaml
+

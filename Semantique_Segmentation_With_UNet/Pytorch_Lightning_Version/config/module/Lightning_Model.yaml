@@ -1,0 +1,5 @@
+lightningmodel:
+  _target_: Modules.Lightning_Segmentator.City_Segmentator
+  num_classes: 20
+
+  

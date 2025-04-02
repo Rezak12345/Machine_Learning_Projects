@@ -1,0 +1,7 @@
+train:
+  _target_: dataset.process.AnimalDataset
+  data_dir: '..\ML_Projects\Image_Category_Classification\Pytorch_Lightning_Version\DATA\Animals'
+  image_size: 150
+  limit_classes: Null
+
+

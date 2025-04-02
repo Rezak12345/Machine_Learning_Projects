@@ -1,0 +1,21 @@
+train:
+  _target_: dataset.intel.Intel_Dataset
+  data_dir: '..\ML_Projects\Intel_Image_Classification\Pytorch_Lightning_Version\DATA'
+  image_size: 150
+  class_names: ['buildings', 'forest', 'glacier', 'mountain', 'sea', 'street']
+  data_type: 'train'
+
+val: 
+  _target_: dataset.intel.Intel_Dataset
+  data_dir: '..\ML_Projects\Intel_Image_Classification\Pytorch_Lightning_Version\DATA'
+  image_size: 150
+  class_names: ['buildings', 'forest', 'glacier', 'mountain', 'sea', 'street']
+  data_type: 'test'
+
+predict:
+  _target_: dataset.intel.Intel_Dataset
+  data_dir: '..\ML_Projects\Intel_Image_Classification\Pytorch_Lightning_Version\DATA'
+  image_size: 150   
+  class_names: ['buildings', 'forest', 'glacier', 'mountain', 'sea', 'street']
+  data_type: 'pred'
+

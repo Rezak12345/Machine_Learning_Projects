@@ -1,0 +1,11 @@
+train:
+  _target_: dataset.process.AnimalDataset
+  data_dir: '...\data\classification\Animals'
+  image_size: 150
+  limit_classes: 
+  - ['cats', 200]
+
+  
+
+
+

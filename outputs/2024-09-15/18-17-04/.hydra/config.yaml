@@ -1,0 +1,64 @@
+data:
+  intel_datamodule:
+    _target_: Modules.Data_Module.CityDataModule
+    train_workers: 2
+dataset:
+  train:
+    _target_: dataset.city.CityscapeDataset
+    data_dir: C:\Users\Rezak.KHOUAS\ML_Projects\Semantique_Segmentation_With_UNet\Pytorch_Lightning_Version\DATA\cityscapes_data\cityscapes_data
+    subset: train
+    image_size:
+    - 256
+    - 256
+  val:
+    _target_: dataset.city.CityscapeDataset
+    data_dir: C:\Users\Rezak.KHOUAS\ML_Projects\Semantique_Segmentation_With_UNet\Pytorch_Lightning_Version\DATA\cityscapes_data\cityscapes_data
+    subset: val
+    image_size:
+    - 256
+    - 256
+module:
+  lightningmodel:
+    _target_: Modules.Lightning_Segmentator.City_Segmentator
+    num_classes: 20
+saves:
+  modelcheckpoint:
+    _target_: Models.custom_checkpoint.ModelCheckpoint
+    save_dir: C:\Users\Rezak.KHOUAS\ML_Projects\Semantique_Segmentation_With_UNet\Pytorch_Lightning_Version\checkpoint
+    best_model_name: best_model
+  checkpoint_loss:
+    _target_: pytorch_lightning.callbacks.ModelCheckpoint
+    dirpath: C:\Users\Rezak.KHOUAS\ML_Projects\Semantique_Segmentation_With_UNet\Pytorch_Lightning_Version\checkpoint
+    filename: best-loss-{epoch:02d}-{val_loss:.2f}
+    monitor: val_loss
+    save_last: true
+    save_top_k: 1
+    mode: min
+  checkpoint_accuracy:
+    _target_: pytorch_lightning.callbacks.ModelCheckpoint
+    dirpath: C:\Users\Rezak.KHOUAS\ML_Projects\Semantique_Segmentation_With_UNet\Pytorch_Lightning_Version\checkpoint
+    filename: best_accuracy-{epoch:02d}-{val_accuracy:.4f}
+    monitor: val_accuracy
+    save_top_k: 1
+    mode: max
+  logging:
+    logs: C:\Users\Rezak.KHOUAS\ML_Projects\Semantique_Segmentation_With_UNet\Pytorch_Lightning_Version\logs
+  load_from_checkpoint:
+    best_model_path: ..\Image_Category_Classification\Pytorch_Lightning_Version\checkpoint_1\best-loss-epoch=04-val_loss=0.01.ckpt
+train:
+  lr: 0.001
+  batch_size: 32
+  optimizer:
+    _target_: torch.optim.Adam
+  scheduler:
+    _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+    mode: min
+    patience: 10
+    factor: 0.05
+    min_lr: 1.0e-06
+  optimizer_monitor: val_loss
+  trainer:
+    _target_: pytorch_lightning.Trainer
+    min_epochs: 30
+    max_epochs: 30
+    log_every_n_steps: 40

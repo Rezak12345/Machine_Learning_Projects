@@ -1,0 +1,3 @@
+intel_datamodule:
+  _target_: Modules.Data_Module.IntelDataModule
+  train_workers: 0

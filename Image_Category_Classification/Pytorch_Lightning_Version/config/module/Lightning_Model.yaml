@@ -1,0 +1,5 @@
+lightningmodel:
+  _target_: Modules.Lightning_Classifier.CNN_Classifier
+  num_classes: 3
+
+  

@@ -1,0 +1,5 @@
+lightningmodel:
+  _target_: Modules.Lightning_Classifier.Intel_Classifier
+  num_classes: 6
+
+  

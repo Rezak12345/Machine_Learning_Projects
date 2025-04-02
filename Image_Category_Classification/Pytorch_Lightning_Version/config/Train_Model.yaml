@@ -1,0 +1,8 @@
+defaults:
+  - _self_
+  - data: animals.yaml
+  - dataset: animal_1.yaml
+  - module: Lightning_Model.yaml
+  - saves: anim_1.yaml
+  - train: trainer.yaml
+
