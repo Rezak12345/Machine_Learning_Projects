@@ -10,7 +10,7 @@ from omegaconf import DictConfig
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
 print("Device:", device)
 
-@hydra.main(config_path=r"C:\Users\Rezak.KHOUAS\ML_Projects\Image_Category_Classification\Pytorch_Lightning_Version\config", config_name="Train_Model.yaml", version_base="1.3.2")
+@hydra.main(config_path=r"..\ML_Projects\Image_Category_Classification\Pytorch_Lightning_Version\config", config_name="Train_Model.yaml", version_base="1.3.2")
 
 def main(config: DictConfig):
     

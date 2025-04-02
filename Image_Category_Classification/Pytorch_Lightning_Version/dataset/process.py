@@ -1,11 +1,3 @@
-# This code defines a custom dataset for the image classification model using PyTorch.
-# The main purpose of this code is to create an `AnimalDataset` class that efficiently handles
-# the preparation of training data for DINOv2. This class allows for loading images,
-# transforming them into a format usable by the model (with resizing, normalization),
-# and associating each image with a label corresponding to its class (cats, dogs, snakes). 
-# Additionally, it includes a feature to limit the number of images per class, 
-# which is useful for balancing the data or testing specific configurations.
-
 import sys,os
 from PIL import Image
 sys.path = [r'..\ML_Projects\Image_Category_Classification\Pytorch_Lightning_Version'] + sys.path

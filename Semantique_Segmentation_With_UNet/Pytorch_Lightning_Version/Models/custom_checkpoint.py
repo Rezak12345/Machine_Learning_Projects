@@ -1,13 +1,3 @@
-# This code implements a custom callback class for PyTorch Lightning,
-# called ModelCheckpoint. The purpose of this class is to automatically
-# save the model when it achieves better performance on the validation set,
-# measured by the validation loss (val_loss). Each time the validation loss
-# improves at the end of an epoch, the model, along with the optimizer's state
-# and relevant metrics (loss and accuracy), is saved to a file. This ensures
-# that the best model encountered during training is preserved, which is
-# crucial to avoid losing the best weights, especially during long and complex
-# deep learning training sessions.
-
 import sys
 sys.path = [r'..\ML_Projects\Semantique_Segmentation_With_UNet\Pytorch_Lightning_Version'] + sys.path
 import pytorch_lightning as pl

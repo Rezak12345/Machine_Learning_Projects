@@ -1,10 +1,3 @@
-# This code defines an `AnimalDataModule` class for managing data in a deep learning project 
-# using PyTorch Lightning. This class allows for loading, randomly splitting, and preparing
-# data for training, validation, and testing of models, using a specific dataset 
-# (in this case, an animal dataset). It simplifies the management of different phases 
-# of the data pipeline, ensuring that the datasets are correctly divided into training, 
-# validation, and test sets, while providing automation of the data loading process via DataLoader.
-
 import os, sys
 sys.path = [r'..\ML_Projects\Image_Category_Classification\Pytorch_Lightning_Version'] + sys.path
 from dataset.process import AnimalDataset

@@ -1,9 +1,3 @@
-# This code defines a PyTorch Lightning class for a custom DINOv2. 
-# The model uses a backbone and a classifier to make predictions and includes several performance metrics, 
-# such as Accuracy, F1 Score, Kappa, and Jaccard Index, to evaluate the quality of the predictions. 
-# The code handles the training, validation, and testing of the model, with automated logging to track performance 
-# in real-time and hyperparameter adjustments, making it a complete pipeline for evaluating classification models.
-
 import sys
 sys.path = [r'..\ML_Projects\Image_Category_Classification\Pytorch_Lightning_Version'] + sys.path
 import torch

@@ -1,4 +1,3 @@
-
 import sys, os
 sys.path = [r'..\ML_Projects\Semantique_Segmentation_With_UNet\Pytorch_Lightning_Version'] + sys.path
 import torch

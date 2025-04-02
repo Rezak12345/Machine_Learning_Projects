@@ -1,4 +1,3 @@
-
 import sys
 sys.path = [r'..\ML_Projects\Intel_Image_Classification\Pytorch_Lightning_Version'] + sys.path
 import torch
