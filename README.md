@@ -91,7 +91,8 @@ All projects here follow LightningModule-based architecture to ensure clarity an
     
     ├── Train.py
 
-📊 Datasets Used
+## 📊 Datasets Used
+
 🖼️ Image Classification
 Dataset:https://www.kaggle.com/datasets/puneet6060/intel-image-classification
 
@@ -106,7 +107,8 @@ Includes .zip downloads, not versioned here due to size
 
 Note: Datasets are referenced or loaded using PyTorch Datasets or custom loaders. Large files are ignored via .gitignore.
 
-🚀 How to Run
+## 🚀 How to Run
+
 1. Install Dependencies
 bash
 Copy
@@ -119,7 +121,8 @@ Edit
 python train.py --config config.yaml
 Each project includes a config file and script tailored to the task.
 
-✅ Features
+## ✅ Features
+
 📦 PyTorch Lightning training structure
 
 🔁 Training/validation/test split handling
@@ -132,16 +135,22 @@ Each project includes a config file and script tailored to the task.
 
 🧪 Reproducible experiments
 
-🙏 Credits / Inspiration
-These implementations are inspired by the excellent open-source contributions from: 
+## 🙏 Credits / Inspiration
 
-https://www.kaggle.com/code/gokulkarthik/image-segmentation-with-unet-pytorch
+These implementations are inspired by the excellent open-source contributions from:
 
-[@milesial — PyTorch-UNet](https://github.com/milesial/Pytorch-UNet)
+- 📘 [Gokul Karthik – Image Segmentation with UNet (Kaggle)](https://www.kaggle.com/code/gokulkarthik/image-segmentation-with-unet-pytorch)  
+  Provided a clear and practical example of applying UNet for image segmentation using PyTorch.
 
-PyTorch Lightning — for model structure and training loops
+- 🧠 [@milesial — PyTorch-UNet](https://github.com/milesial/Pytorch-UNet)  
+  A foundational implementation that helped shape the model architecture and training pipeline.
+
+- ⚡ [PyTorch Lightning](https://github.com/Lightning-AI/pytorch-lightning)  
+  Used to organize models, training, and validation with a clean and modular code structure.
+
 
 Thanks to all contributors in the open-source ML community 🙌
 
-📄 License
+## 📄 License
+
 This repository is released under the MIT License. Please review the license file before reuse.
