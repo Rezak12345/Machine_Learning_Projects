@@ -23,38 +23,46 @@ All projects here follow LightningModule-based architecture to ensure clarity an
 
 
 ├── Image_Category_Classification
+
     ├── models
-            ├── custom_checkpoint.py
+            ├── custom_checkpoint.py         
             ├── model.py
+
     ├── Modules
             ├── Data_Module.py
             ├── Lightning_Classifier.py
+            
     ├── config
             ├── Data
             ├── Dataset
             ├── module
             ├── saves
             ├── train
+
     ├── dataset
             ├── process.py
-    
+
     ├── Test.py
     ├── Train.py
     ├── labels.py
 
 ├── Intel_Image_Classification
+
     ├── models
             ├── custom_checkpoint.py
             ├── model.py
+
     ├── Modules
             ├── Data_Module.py
             ├── Lightning_Classifier.py
+
     ├── config
             ├── Data
             ├── Dataset
             ├── module
             ├── saves
             ├── train
+
     ├── dataset
             ├── intel.py
     
@@ -62,18 +70,22 @@ All projects here follow LightningModule-based architecture to ensure clarity an
     ├── labels.py
 
 ├── Semantique_Segmentation_With_UNet
+
     ├── models
             ├── custom_checkpoint.py
             ├── model.py
+
     ├── Modules
             ├── Data_Module.py
             ├── Lightning_Segmentator.py
+
     ├── config
             ├── Data
             ├── Dataset
             ├── module
             ├── saves
             ├── train
+            
     ├── dataset
             ├── city.py
     
