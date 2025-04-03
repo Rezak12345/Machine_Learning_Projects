@@ -140,14 +140,10 @@ Each project includes a config file and script tailored to the task.
 These implementations are inspired by the excellent open-source contributions from:
 
 - 📘 [Gokul Karthik – Image Segmentation with UNet (Kaggle)](https://www.kaggle.com/code/gokulkarthik/image-segmentation-with-unet-pytorch)  
-  Provided a clear and practical example of applying UNet for image segmentation using PyTorch.
 
 - 🧠 [@milesial — PyTorch-UNet](https://github.com/milesial/Pytorch-UNet)  
-  A foundational implementation that helped shape the model architecture and training pipeline.
 
 - ⚡ [PyTorch Lightning](https://github.com/Lightning-AI/pytorch-lightning)  
-  Used to organize models, training, and validation with a clean and modular code structure.
-
 
 Thanks to all contributors in the open-source ML community 🙌
 
