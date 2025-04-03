@@ -1,1 +1,66 @@
-"*.zip" 
+# 🔧 Fichiers Python et cache
+__pycache__/
+*.py[cod]
+*.so
+
+# 📦 Environnements virtuels
+env/
+venv/
+ENV/
+*.egg-info/
+
+# ⚙️ Config et IDEs
+*.log
+*.sqlite3
+.DS_Store
+*.env
+*.ini
+*.bak
+.vscode/
+.idea/
+
+# 📷 Données, modèles, fichiers lourds
+*.ckpt
+*.h5
+*.pt
+*.pkl
+*.joblib
+*.onnx
+*.tflite
+*.npy
+*.npz
+*.zip
+*.tar
+*.gz
+
+data/
+datasets/
+models/
+outputs/
+checkpoints/
+logs/
+experiments/
+
+# ⚡ PyTorch Lightning outputs
+lightning_logs/
+tb_logs/
+
+# 📈 Visualisation
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.pdf
+
+# 🧪 Tests temporaires
+test_outputs/
+__results__/
+*.tmp
+
+# ⚠️ Fichiers sensibles ou de sécurité
+*.env
+.env.*
+secret.*
+credentials.json
+token.json
